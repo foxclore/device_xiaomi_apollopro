@@ -32,5 +32,9 @@ TARGET_SCREEN_WIDTH := 1080
 
 PRODUCT_SHIPPING_API_LEVEL := 29
 
+# Device-specific settings
+PRODUCT_PACKAGES += \
+    XiaomiParts
+
 # Inherit from xiaomi sm8250-common
 $(call inherit-product, device/xiaomi/sm8250-common/common.mk)
