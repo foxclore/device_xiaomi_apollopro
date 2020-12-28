@@ -14,8 +14,6 @@
 # limitations under the License.
 #
 
-TARGET_USES_PREBUILT_KERNEL := true
-
 # Inherit from xiaomi sm8250-common
 -include device/xiaomi/sm8250-common/BoardConfigCommon.mk
 
@@ -31,14 +29,7 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 TARGET_SCREEN_DENSITY := 440
 
 # Kernel
-ifeq ($(TARGET_USES_PREBUILT_KERNEL), true)
-TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
-BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
-BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
-else
-TARGET_KERNEL_CONFIG := apollopro_defconfig
-endif
+TARGET_KERNEL_CONFIG := vendor/apollopro_defconfig
 
 # Properties
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
