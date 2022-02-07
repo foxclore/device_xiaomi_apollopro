@@ -17,10 +17,10 @@
 # Inherit from xiaomi sm8250-common
 -include device/xiaomi/sm8250-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/xiaomi/apollopro
+DEVICE_PATH := device/xiaomi/apollon
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := apollopro,apollo
+TARGET_OTA_ASSERT_DEVICE := apollon,apollo
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
@@ -29,11 +29,11 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 TARGET_SCREEN_DENSITY := 440
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_apollopro
-TARGET_RECOVERY_DEVICE_MODULES := libinit_apollopro
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_apollon
+TARGET_RECOVERY_DEVICE_MODULES := libinit_apollon
 
 # Kernel
-TARGET_KERNEL_CONFIG := vendor/apollopro_defconfig
+TARGET_KERNEL_CONFIG := vendor/apollo_defconfig
 
 # Properties
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop

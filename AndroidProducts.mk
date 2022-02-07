@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_apollopro.mk
+    $(LOCAL_DIR)/lineage_apollon.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_apollopro-user \
-    lineage_apollopro-userdebug \
-    lineage_apollopro-eng
+    lineage_apollon-user \
+    lineage_apollon-userdebug \
+    lineage_apollon-eng

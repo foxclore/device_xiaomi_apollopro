@@ -27,6 +27,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),apollopro)
+ifeq ($(TARGET_DEVICE),apollon)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 endif
